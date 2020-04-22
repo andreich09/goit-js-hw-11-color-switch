@@ -10,7 +10,7 @@ const randomIntegerFromInterval = (min, max) => {
 
 function startChangeColor() {
     intervalId = setInterval(() => {
-        body.style = `background-color:${colors[randomIntegerFromInterval(0, 5)]}`;
+        body.style = `background-color:${colors[randomIntegerFromInterval(0, colors.length - 1)]}`;
     }, 1000);
     startBtn.disabled = true;
 }
